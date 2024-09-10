@@ -1,0 +1,47 @@
+{
+  "name": "webovio",
+  "version": "1.0.0",
+  "description": "website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo 'Привет!'",
+    "check": "prettier --check './src/**/*.{html,css,js}'",
+    "format": "prettier --write './src/**/*.{html,css,js}'",
+    "lint": "stylelint './src/**/*.css'",
+    "lintfix": "stylelint './src/**/*.css' --fix",
+    "checkAll": "npm run check && npm run lint",
+    "fixAll": "npm run format && npm run lintfix",
+    "build": "gulp build",
+    "fixAndBuild": "npm run fixAll && npm run build",
+    "dev": "gulp",
+    "lintfixAndPush": "npm run fixAll && git add . && git commit -m 'подготовили к публикации' && git push"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DKMFzF/webowio.git\u001b[.git"
+  },
+  "author": "DKMFzF",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DKMFzF/webowio.git\u001b[/issues"
+  },
+  "homepage": "https://github.com/DKMFzF/webowio.git\u001b[#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "browser-sync": "^3.0.2",
+    "cssnano": "^7.0.6",
+    "del": "^6.0.0",
+    "gulp": "^5.0.0",
+    "gulp-concat-css": "^3.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^10.0.0",
+    "html-minifier": "^4.0.0",
+    "postcss": "^8.4.45",
+    "postcss-combine-media-query": "^1.0.1",
+    "prettier": "^3.3.3",
+    "stylelint": "^16.9.0"
+  },
+  "browserslist": [
+    "last 5 versions"
+  ]
+}
