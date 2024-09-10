@@ -1,0 +1,91 @@
+/* Общие стили */
+
+.page {
+    min-inline-size: 375px;
+    /* block-size: 100vh; */
+    display: flex;
+    flex-direction: column;
+    font-family: var(--poppins-font), sans-serif;
+    font-weight: 400;
+    background-color: #3b3b3b;
+}
+
+.title {
+    font-size: 60px;
+    line-height: 74px;
+}
+
+.paragraph {
+    font-size: 16px;
+}
+
+.link {
+    font-size: 16px;
+}
+
+.container {
+    margin-inline: 11.46%;
+}
+
+/* Хедр */
+
+.header {
+    margin-block-start: 1.78%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    padding-inline-end: 9px;
+    inline-size: 61px;
+}
+
+.logo-title {
+    inline-size: 190px;
+}
+
+.header__button {
+    inline-size: 42px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    border-style: solid;
+    cursor: pointer;
+}
+
+.header__button-nav {
+    inline-size: 18px;
+}
+
+/* Первая секция */
+
+.main-body {
+    margin-block-start: 8%;
+}
+
+.hero-container {
+    inline-size: 616px;
+}
+
+.hero-container__above-title {
+    font-size: 14px;
+}
+
+.hero-container__title {
+    margin-block-start: 22px;
+}
+
+.hero-container__paragraph {
+    margin-block-start: 24px;
+    margin-block-end: 50px;
+}
+
+.hero-container__link {
+    font-family: var(--accent-font), sans-serif;
+    font-weight: 700;
+    color: #ffd723;
+}
+
+/* .hero-container__link::before {
+    content: '▶';
+    padding-inline-end: 20px;
+} */
