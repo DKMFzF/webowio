@@ -14,7 +14,7 @@
     "build": "gulp build",
     "fixAndBuild": "npm run fixAll && npm run build",
     "dev": "gulp",
-    "lintfixAndPush": "npm run fixAll && git add . && git commit -m 'подготовили к публикации' && git push"
+    "gitCommit": "git add . && git commit -m 'test' && git push origin master"
   },
   "repository": {
     "type": "git",
@@ -43,8 +43,5 @@
   },
   "browserslist": [
     "last 5 versions"
-  ],
-  "dependencies": {
-    "commit": "^0.0.4"
-  }
+  ]
 }
