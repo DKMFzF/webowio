@@ -1,4 +1,9 @@
 :root {
-    --poppins-font: 'Poppins', sans-serif;
-    --accent-font: 'Fontawesome', sans-serif;
+  /* Fonts */
+  --poppins-font: 'Poppins', sans-serif;
+  --accent-font: 'Fontawesome', sans-serif;
+
+  /* Colors */
+  --color-fonts: #fff;
+  --link: #ffd723;
 }

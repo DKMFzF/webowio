@@ -1,91 +1,114 @@
 /* Общие стили */
 
 .page {
-    min-inline-size: 375px;
-    /* block-size: 100vh; */
-    display: flex;
-    flex-direction: column;
-    font-family: var(--poppins-font), sans-serif;
-    font-weight: 400;
-    background-color: #3b3b3b;
+  min-inline-size: 375px;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--poppins-font), sans-serif;
+  font-weight: 400;
+  background-color: #3b3b3b;
 }
 
 .title {
-    font-size: 60px;
-    line-height: 74px;
+  line-height: 74px;
+  font-size: 60px;
 }
 
 .paragraph {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .link {
-    font-size: 16px;
+  display: block;
+  position: relative;
+  font-size: 16px;
+  text-decoration: none;
+  font-family: var(--accent-font), sans-serif;
+  font-weight: 700;
+  color: var(--link, orange);
+  cursor: pointer;
+}
+
+.link::before {
+  content: '▶';
+  padding-inline-end: 5px;
+}
+
+.link::after {
+  content: '';
+  position: absolute;
+  display: block;
+  background-color: var(--link, orange);
+  inline-size: 0;
+  block-size: 2px;
+  inset-inline-start: 17px;
+  transition: inline-size 0.5s ease-in-out;
+}
+
+.link:hover::after {
+  inline-size: 97px;
 }
 
 .container {
-    margin-inline: 11.46%;
+  margin-inline: 11.46%;
 }
 
 /* Хедр */
 
 .header {
-    margin-block-start: 1.78%;
-    display: flex;
-    justify-content: space-between;
+  margin-block-start: 1.78%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .logo {
-    padding-inline-end: 9px;
-    inline-size: 61px;
+  padding-inline-end: 9px;
+  inline-size: 61px;
 }
 
 .logo-title {
-    inline-size: 190px;
+  inline-size: 190px;
 }
 
 .header__button {
-    inline-size: 42px;
-    aspect-ratio: 1 / 1;
-    border-radius: 50%;
-    border-style: solid;
-    cursor: pointer;
+  inline-size: 42px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  border-style: solid;
+  cursor: pointer;
 }
 
 .header__button-nav {
-    inline-size: 18px;
+  inline-size: 18px;
 }
 
 /* Первая секция */
 
 .main-body {
-    margin-block-start: 8%;
+  margin-block-start: 8%;
+}
+
+.hero {
+  color: var(--color-fonts, white);
 }
 
 .hero-container {
-    inline-size: 616px;
+  inline-size: 616px;
 }
 
 .hero-container__above-title {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 .hero-container__title {
-    margin-block-start: 22px;
+  margin-block-start: 22px;
 }
 
 .hero-container__paragraph {
-    margin-block-start: 24px;
-    margin-block-end: 50px;
+  margin-block-start: 24px;
+  margin-block-end: 55px;
 }
 
 .hero-container__link {
-    font-family: var(--accent-font), sans-serif;
-    font-weight: 700;
-    color: #ffd723;
+  margin-block-start: 57px;
 }
-
-/* .hero-container__link::before {
-    content: '▶';
-    padding-inline-end: 20px;
-} */
