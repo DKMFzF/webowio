@@ -66,6 +66,12 @@ function images() {
             .pipe(browserSync.reload({stream: true}));;
 }
 
+function svg() {
+    return gulp.src('src/svg/**/*.svg')
+            .pipe(gulp.dest('dist/svg'))
+            .pipe(browserSync.reload({stream: true}));
+}
+
 function fonts() {
     return gulp.src('src/fonts/**/*.{woff,woff2}')
             .pipe(gulp.dest('dist/fonts'))
@@ -90,9 +96,10 @@ function watchFiles() {
     gulp.watch(['src/fonts/**/*.{woff,woff2}'], fonts);
     gulp.watch(['src/scripts/**/*.js'], scrips);
 	gulp.watch(['src/images/**/*.{jpg,png,svg,gif,ico,webp,avif}'], images);
+    gulp.watch(['src/svg/**/*.svg'], svg);
 }
 
-const build = gulp.series(clean, gulp.parallel(html, css, images, fonts, scrips));
+const build = gulp.series(clean, gulp.parallel(html, css, images, fonts, scrips, svg));
 const watchapp = gulp.parallel(build, watchFiles, serve); 
 
 // строчки, которые позволяют вызвать эту задачу из терминала
@@ -102,6 +109,7 @@ exports.images = images;
 exports.clean = clean;
 exports.fonts = fonts;
 exports.scrips = scrips;
+exports.svg = svg;
 
 // строки сборки проекта и запуска сервера
 exports.build = build;
