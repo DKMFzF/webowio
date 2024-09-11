@@ -59,8 +59,8 @@
 
 .header {
   position: absolute;
+  z-index: 1;
   inset-inline: 164px;
-  max-inline-size: 1111px;
   margin-block-start: 1.78%;
   display: flex;
   justify-content: space-between;
@@ -114,7 +114,7 @@
 
 .hero-container__paragraph {
   inline-size: 581px;
-  margin-block-start: 2%;
+  margin-block-start: 2.2%;
 }
 
 .hero-container__link {
@@ -125,7 +125,55 @@
 /* Вторая секция */
 
 .deation-evaluation__container {
+  padding-block: 150px;
+  padding-inline: 166px;
+  min-inline-size: 1111px;
+}
+
+.deation-evaluation__container__title {
+  inline-size: 597px;
+  grid-column: span 4;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  line-height: 50px;
+}
+
+.deation-evaluation__container__list {
+  margin-block-start: 52px;
   display: grid;
-  grid-template-columns: 4fr;
-  grid-template-rows: 2fr;
+  grid-auto-flow: column;
+  column-gap: 2.7%;
+  justify-items: center;
+}
+
+.deation-evaluation__container__list-item {
+  padding: 30px;
+  min-inline-size: 255px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: var(--poppins-font), sans-serif;
+  font-weight: 500;
+}
+
+.list-item__title {
+  inline-size: 193px;
+  text-transform: uppercase;
+  line-height: 34px;
+  font-size: 24px;
+}
+
+.new-line {
+  display: block;
+}
+
+.list-item__paragraph {
+  margin-block-start: 20px;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.list-item__link {
+  margin-block-start: 34px;
 }
