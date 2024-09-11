@@ -7,10 +7,10 @@
   font-family: var(--poppins-font), sans-serif;
   font-weight: 400;
   background-color: white;
-  background-image: url(../images/bitmap.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+}
+
+.main-body {
+  position: relative;
 }
 
 .title {
@@ -55,13 +55,12 @@
   inline-size: 97px;
 }
 
-.container {
-  margin-inline: 11.55%;
-}
-
 /* Хедр */
 
 .header {
+  position: absolute;
+  inset-inline: 164px;
+  max-inline-size: 1111px;
   margin-block-start: 1.78%;
   display: flex;
   justify-content: space-between;
@@ -90,16 +89,18 @@
 
 /* Первая секция */
 
-.main-body {
-  margin-block-start: 8%;
-}
-
 .hero {
   color: var(--color-fonts, white);
+  background-image: url(../images/bitmap.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-container {
-  inline-size: 616px;
+  padding-block-start: 13%;
+  padding-block-end: 14.5%;
+  padding-inline: 11.6%;
 }
 
 .hero-container__above-title {
@@ -107,14 +108,24 @@
 }
 
 .hero-container__title {
-  margin-block-start: 22px;
+  inline-size: 616px;
+  margin-block-start: 2%;
 }
 
 .hero-container__paragraph {
-  margin-block-start: 25px;
+  inline-size: 581px;
+  margin-block-start: 2%;
 }
 
 .hero-container__link {
-  margin-block-start: 53px;
-  margin-block-end: 210px;
+  inline-size: 114px;
+  margin-block-start: 4.8%;
+}
+
+/* Вторая секция */
+
+.deation-evaluation__container {
+  display: grid;
+  grid-template-columns: 4fr;
+  grid-template-rows: 2fr;
 }
