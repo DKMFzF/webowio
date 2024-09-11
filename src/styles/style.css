@@ -60,7 +60,7 @@
 .header {
   position: absolute;
   z-index: 1;
-  inset-inline: 164px;
+  inset-inline: 11.5%;
   margin-block-start: 1.78%;
   display: flex;
   justify-content: space-between;
@@ -101,6 +101,7 @@
   padding-block-start: 13%;
   padding-block-end: 14.5%;
   padding-inline: 11.6%;
+  block-size: 100vh;
 }
 
 .hero-container__above-title {
@@ -108,12 +109,12 @@
 }
 
 .hero-container__title {
-  inline-size: 616px;
+  inline-size: 51%;
   margin-block-start: 2%;
 }
 
 .hero-container__paragraph {
-  inline-size: 581px;
+  inline-size: 49%;
   margin-block-start: 2.2%;
 }
 
@@ -126,12 +127,11 @@
 
 .deation-evaluation__container {
   padding-block: 150px;
-  padding-inline: 166px;
-  min-inline-size: 1111px;
+  padding-inline: 11.5%;
 }
 
 .deation-evaluation__container__title {
-  inline-size: 597px;
+  inline-size: 54%;
   grid-column: span 4;
   font-size: 36px;
   font-weight: 700;
@@ -142,7 +142,7 @@
 .deation-evaluation__container__list {
   margin-block-start: 52px;
   display: grid;
-  grid-auto-flow: column;
+  grid-template-columns: repeat(4, 1fr);
   column-gap: 2.7%;
   justify-items: center;
 }
@@ -176,4 +176,21 @@
 
 .list-item__link {
   margin-block-start: 34px;
+}
+
+/* 1111 */
+
+@media (max-width: 1440px) {
+
+  .deation-evaluation__container__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 1111px) {
+
+  .deation-evaluation__container__list {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: start;
+  }
 }

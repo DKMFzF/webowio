@@ -14,7 +14,7 @@
     "build": "gulp build",
     "fixAndBuild": "npm run fixAll && npm run build",
     "dev": "gulp",
-    "commit": "git add . && git commit -m section-servis-card-css-desktop && git push origin master"
+    "commit": "git add . && git commit -m section-two-fix-product && git push origin master"
   },
   "repository": {
     "type": "git",
