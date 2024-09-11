@@ -55,7 +55,7 @@ function css() {
         .pipe(plumber())
         .pipe(concat('style.css'))
         .pipe(postcss(plugins)) // Загрузка плагинов в обработчик
-        .pipe(gulp.dest('dist/styles'))
+        .pipe(gulp.dest('dist/'))
         .pipe(browserSync.reload({stream: true}));;
 }
 
