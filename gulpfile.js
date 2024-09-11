@@ -61,23 +61,26 @@ function css() {
 
 // Перенос изобрадений
 function images() {
-    return gulp.src('src/images/**/*.{jpg,png,svg,gif,ico,webp,avif}')
+    return gulp.src('src/images/**/*.{jpg,png,svg,gif,ico,webp,avif}', { encoding: false })
             .pipe(gulp.dest('dist/images'))
-            .pipe(browserSync.reload({stream: true}));;
+            .pipe(browserSync.reload({stream: true}));
 }
 
+// Перенос svg
 function svg() {
     return gulp.src('src/svg/**/*.svg')
             .pipe(gulp.dest('dist/svg'))
             .pipe(browserSync.reload({stream: true}));
 }
 
+// Перенос шрифтов 
 function fonts() {
-    return gulp.src('src/fonts/**/*.{woff,woff2}')
+    return gulp.src('src/fonts/**/*.{woff,woff2,ttf}')
             .pipe(gulp.dest('dist/fonts'))
             .pipe(browserSync.reload({stream: true}));
 }
 
+// Перенос скриптов
 function scrips() {
     return gulp.src('src/scripts/**/*.js')
             .pipe(gulp.dest('dist/scripts'))
