@@ -185,7 +185,7 @@
   inline-size: calc(100% - 11.4%);
   inset-block-start: calc(100% - 9.6%);
   background-color: #fafafa;
-  box-shadow: 0 0 400px 20px rgba(0 0 0 / .2);
+  box-shadow: 0 0 400px 20px rgba(0 0 0 / 0.2);
 }
 
 .get-started_content {
@@ -216,7 +216,6 @@
   display: flex;
   gap: 128px;
   grid-column: span 4;
-  
 }
 
 .footer__content-conteiner {
@@ -231,7 +230,7 @@
 }
 
 .footer__contact-info__accent-info {
-  margin-block-start: 8px; 
+  margin-block-start: 8px;
   display: block;
   color: #fff;
 }
@@ -319,7 +318,7 @@
 }
 
 @media (max-width: 1024px) {
-
+  
   .hero-container {
     padding-block-start: 29%;
   }
