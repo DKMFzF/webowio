@@ -15,7 +15,7 @@
 
 .title {
   line-height: 74px;
-  font-size: 60px;
+  font-size: clamp(1.875rem, 1.2148rem + 2.8169vw, 3.75rem);
   font-weight: 700;
   letter-spacing: 3px;
 }
@@ -144,7 +144,6 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 2.7%;
-  justify-items: center;
 }
 
 .deation-evaluation__container__list-item {
@@ -178,8 +177,6 @@
   margin-block-start: 34px;
 }
 
-/* 1111 */
-
 @media (max-width: 1440px) {
 
   .deation-evaluation__container__list {
@@ -192,5 +189,16 @@
   .deation-evaluation__container__list {
     grid-template-columns: repeat(1, 1fr);
     justify-items: start;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  .hero-container {
+    padding-block-start: 29%;
+  }
+
+  .hero-container__title {
+    inline-size: 80%;
   }
 }
