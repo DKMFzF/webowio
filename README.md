@@ -18,7 +18,7 @@ A step-by-step series of examples that explain how to run a development environm
 To start, open a terminal in your repository where the project is hosted and enter the following command
 
 ```
-install npm
+npm install
 ```
 
 And repeat
