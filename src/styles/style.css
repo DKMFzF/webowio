@@ -101,7 +101,7 @@
   padding-block-start: 13%;
   padding-block-end: 14.5%;
   padding-inline: 11.6%;
-  block-size: 100vh;
+  /* block-size: 100vh; */
 }
 
 .hero-container__above-title {
@@ -126,7 +126,8 @@
 /* Вторая секция */
 
 .deation-evaluation__container {
-  padding-block: 150px;
+  padding-block-start: 150px;
+  padding-block-end: 330px;
   padding-inline: 11.5%;
 }
 
@@ -175,6 +176,131 @@
 
 .list-item__link {
   margin-block-start: 34px;
+}
+
+/* Третья секция */
+
+.get-started {
+  position: absolute;
+  inline-size: calc(100% - 11.4%);
+  inset-block-start: calc(100% - 9.6%);
+  background-color: #fafafa;
+  box-shadow: 0 0 400px 20px rgba(0 0 0 / .2);
+}
+
+.get-started_content {
+  padding-inline-end: 289px;
+  padding-inline-start: 164px;
+  padding-block: 70px;
+}
+
+.get-started_content-link {
+  margin-block-start: 50px;
+}
+
+/* Футер */
+
+.footer {
+  background-color: rgba(79 85 61 / 1);
+}
+
+.footer__contant {
+  padding-block-start: 310px;
+  padding-inline: 165px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, min-content);
+}
+
+.footer__contact-info {
+  display: flex;
+  gap: 128px;
+  grid-column: span 4;
+  
+}
+
+.footer__content-conteiner {
+  display: block;
+  block-size: 40px;
+  line-height: 40px;
+}
+
+.footer__contact__accent-text {
+  font-size: 16px;
+  color: rgba(182 193 151 / 1);
+}
+
+.footer__contact-info__accent-info {
+  margin-block-start: 8px; 
+  display: block;
+  color: #fff;
+}
+
+.footer__contact-technology-info {
+  margin-block-start: 123px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  grid-column: span 4;
+}
+
+.footer__contact-technology-info__title {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.footer__contact-technology-info__list {
+  margin-block-start: 35px;
+}
+
+.footer__contact-technology-info__list-item {
+  margin-block-start: 15px;
+}
+
+.footer__contact-technology-info__last-container {
+  margin-inline-start: 95px;
+}
+
+.footer__contact-technology-info__title-gmail {
+  white-space: pre-line;
+}
+
+.footer__contact__accent-text-gmail {
+  display: block;
+  margin-block-start: 51px;
+  font-size: 24px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.footer__contact-technology-info__list-icon {
+  margin-block-start: 28px;
+  display: flex;
+  flex-direction: row;
+  gap: 7px;
+}
+
+.footer_icon {
+  inline-size: 39px;
+}
+
+.footer__lable {
+  margin-block-start: 96px;
+  margin-block-end: 26px;
+  display: flex;
+  flex-direction: row;
+  grid-column: span 4;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  padding-inline-end: 9px;
+  inline-size: 52px;
+}
+
+.footer-logo-title {
+  inline-size: 139px;
 }
 
 @media (max-width: 1440px) {
