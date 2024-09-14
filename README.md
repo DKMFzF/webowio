@@ -1,6 +1,6 @@
 # Webovo
 
-[Link to the website](https://weboowiioootest.netlify.app/)
+[Link to the website](https://master--test-preview-sizte-webovo.netlify.app/)
 
 ## Getting started
 
