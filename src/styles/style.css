@@ -101,7 +101,7 @@
   padding-block-start: 13%;
   padding-block-end: 14.5%;
   padding-inline: 11.6%;
-  /* block-size: 100vh; */
+  block-size: 100vh;
 }
 
 .hero-container__above-title {

@@ -14,7 +14,7 @@
     "build": "gulp build",
     "fixAndBuild": "npm run fixAll && npm run build",
     "dev": "gulp",
-    "commit": "git add . && git commit -m add-favicon && git push origin master"
+    "commit": "git add . && git commit -m final-commit && git push origin master"
   },
   "repository": {
     "type": "git",
